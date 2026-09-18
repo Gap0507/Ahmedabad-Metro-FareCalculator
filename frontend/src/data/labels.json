@@ -1,0 +1,932 @@
+[
+  {
+    "station_id": "VTLG",
+    "name": "Vastral Gam",
+    "description": "Vastral Gam is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "NTCR",
+    "name": "Nirant Cross Road",
+    "description": "Nirant Cross Road is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "VSTL",
+    "name": "Vastral",
+    "description": "Vastral is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "RBCY",
+    "name": "Rabari Colony",
+    "description": "Rabari Colony is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "ARVD",
+    "name": "Amraivadi",
+    "description": "Amraivadi is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "ARPK",
+    "name": "Apparel Park",
+    "description": "Apparel Park is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "KKES",
+    "name": "Kankaria East",
+    "description": "Kankaria East is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "KPMS",
+    "name": "Kalupur Metro Station",
+    "description": "Kalupur Metro Station is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "GEKA",
+    "name": "Gheekanta",
+    "description": "Gheekanta is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "SHHP",
+    "name": "Shahpur",
+    "description": "Shahpur is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "SPSD",
+    "name": "SP Stadium",
+    "description": "SP Stadium is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "CMSR",
+    "name": "Commerce Six Road",
+    "description": "Commerce Six Road is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "GJUV",
+    "name": "Gujarat University",
+    "description": "Gujarat University is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "GKRD",
+    "name": "Gurukul Road",
+    "description": "Gurukul Road is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "DDKN",
+    "name": "Doordarshan Kendra",
+    "description": "Doordarshan Kendra is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "TLTJ",
+    "name": "Thaltej",
+    "description": "Thaltej is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "TLTG",
+    "name": "Thaltej Gam",
+    "description": "Thaltej Gam is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "APMC",
+    "name": "APMC",
+    "description": "APMC is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "JVRJ",
+    "name": "Jivraj Park",
+    "description": "Jivraj Park is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "RNMS",
+    "name": "Rajivnagar",
+    "description": "Rajivnagar is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "SRYS",
+    "name": "Shreyas",
+    "description": "Shreyas is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "PLDI",
+    "name": "Paldi",
+    "description": "Paldi is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "GRMS",
+    "name": "Gandhigram",
+    "description": "Gandhigram is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "UPMS",
+    "name": "Usmanpura",
+    "description": "Usmanpura is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "VRMS",
+    "name": "Vijaynagar",
+    "description": "Vijaynagar is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "VDMS",
+    "name": "Vadaj",
+    "description": "Vadaj is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "RNIP",
+    "name": "Ranip",
+    "description": "Ranip is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "SBRS",
+    "name": "Sabarmati Railway Station",
+    "description": "Sabarmati Railway Station is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "AEC",
+    "name": "AEC",
+    "description": "AEC is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "SMMS",
+    "name": "Sabarmati",
+    "description": "Sabarmati is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "MTRS",
+    "name": "Motera Stadium",
+    "description": "Motera Stadium is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "VIKC",
+    "name": "Vishwakarma College",
+    "description": "Vishwakarma College is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "TAPC",
+    "name": "Tapovan Circle",
+    "description": "Tapovan Circle is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "NAMC",
+    "name": "Narmada Canal",
+    "description": "Narmada Canal is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "KOBC",
+    "name": "Koba Circle",
+    "description": "Koba Circle is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "JUKB",
+    "name": "Juna Koba",
+    "description": "Juna Koba is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "KOBG",
+    "name": "Koba Gam",
+    "description": "Koba Gam is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "RAYN",
+    "name": "Raysan",
+    "description": "Raysan is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "RADN",
+    "name": "Randesan",
+    "description": "Randesan is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "DHKU",
+    "name": "Dholakuva Circle",
+    "description": "Dholakuva Circle is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "INFC",
+    "name": "Infocity",
+    "description": "Infocity is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "SEOA",
+    "name": "Sector-1",
+    "description": "Sector-1 is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "SEAO",
+    "name": "Sector 10A",
+    "description": "Sector 10A is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "SVAL",
+    "name": "Sachivalaya",
+    "description": "Sachivalaya is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "AKDM",
+    "name": "Akshardham",
+    "description": "Akshardham is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "JUSL",
+    "name": "Juna Sachivalaya",
+    "description": "Juna Sachivalaya is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "SEAF",
+    "name": "Sector-16",
+    "description": "Sector-16 is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "SEBD",
+    "name": "Sector-24",
+    "description": "Sector-24 is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "MAHM",
+    "name": "Mahatama Mandir",
+    "description": "Mahatama Mandir is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "PDEU",
+    "name": "PDEU",
+    "description": "PDEU is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "GIFC",
+    "name": "Gift City",
+    "description": "Gift City is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "SHPR",
+    "name": "Shahpur",
+    "description": "Shahpur is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "GBTU",
+    "name": "Gujarat Biotechnology University",
+    "description": "Gujarat Biotechnology University is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "GFTH",
+    "name": "GIFT City House",
+    "description": "GIFT City House is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "ASRD",
+    "name": "Ashram Road",
+    "description": "Ashram Road is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "KTPM",
+    "name": "Koteshwar Prachin Mandir",
+    "description": "Koteshwar Prachin Mandir is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "SBRV",
+    "name": "Sabarmati River",
+    "description": "Sabarmati River is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "SDRN",
+    "name": "Sardarnagar",
+    "description": "Sardarnagar is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "ARPT",
+    "name": "Airport",
+    "description": "Airport is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "OHCI",
+    "name": "Old High Court",
+    "description": "Old High Court is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "KORD",
+    "name": "Koteshwar Road",
+    "description": "Koteshwar Road is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  },
+  {
+    "station_id": "GNLU",
+    "name": "GNLU",
+    "description": "GNLU is a metro station on the Ahmedabad Metro.",
+    "gates": [
+      {
+        "gateNo": "Gate 1",
+        "landmarks": "Main Entrance"
+      },
+      {
+        "gateNo": "Gate 2",
+        "landmarks": "Exit"
+      }
+    ]
+  }
+]

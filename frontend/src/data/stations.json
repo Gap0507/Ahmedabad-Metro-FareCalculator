@@ -1,0 +1,374 @@
+﻿[
+  {
+    "id": "VTLG",
+    "text": "Vastral Gam",
+    "Latitude": 4,
+    "Longitude": 5.3897507700926
+  },
+  {
+    "id": "NTCR",
+    "text": "Nirant Cross Road",
+    "Latitude": 3.9464367148957002,
+    "Longitude": 5.1031083730047
+  },
+  {
+    "id": "VSTL",
+    "text": "Vastral",
+    "Latitude": 3.8907176319389998,
+    "Longitude": 4.6991879025485
+  },
+  {
+    "id": "RBCY",
+    "text": "Rabari Colony",
+    "Latitude": 3.8623605986485,
+    "Longitude": 4.3161019322318
+  },
+  {
+    "id": "ARVD",
+    "text": "Amraivadi",
+    "Latitude": 3.8237220679076,
+    "Longitude": 4.0869224306919
+  },
+  {
+    "id": "ARPK",
+    "text": "Apparel Park",
+    "Latitude": 3.7738070560922,
+    "Longitude": 3.7108933071971
+  },
+  {
+    "id": "KKES",
+    "text": "Kankaria East",
+    "Latitude": 3.7020024045436997,
+    "Longitude": 3.3590590870902997
+  },
+  {
+    "id": "KPMS",
+    "text": "Kalupur Metro Station",
+    "Latitude": 3.5428050246673,
+    "Longitude": 3.2219546345563996
+  },
+  {
+    "id": "GEKA",
+    "text": "Gheekanta",
+    "Latitude": 3.4831060072136,
+    "Longitude": 2.6651358162982
+  },
+  {
+    "id": "SHHP",
+    "text": "Shahpur",
+    "Latitude": 3.3033456324364,
+    "Longitude": 2.5119014281717
+  },
+  {
+    "id": "SPSD",
+    "text": "SP Stadium",
+    "Latitude": 3.292898304382,
+    "Longitude": 1.8408288994681998
+  },
+  {
+    "id": "CMSR",
+    "text": "Commerce Six Road",
+    "Latitude": 3.2789685336428,
+    "Longitude": 1.5437692523103
+  },
+  {
+    "id": "GJUV",
+    "text": "Gujarat University",
+    "Latitude": 3.2091538493428997,
+    "Longitude": 1.2215065807896002
+  },
+  {
+    "id": "GKRD",
+    "text": "Gurukul Road",
+    "Latitude": 3.1909124828987,
+    "Longitude": 0.94192103052369
+  },
+  {
+    "id": "DDKN",
+    "text": "Doordarshan Kendra",
+    "Latitude": 3.1564197172588,
+    "Longitude": 0.59949593951296
+  },
+  {
+    "id": "TLTJ",
+    "text": "Thaltej",
+    "Latitude": 3.1290576675925,
+    "Longitude": 0.29941192943154
+  },
+  {
+    "id": "TLTG",
+    "text": "Thaltej Gam",
+    "Latitude": 3.122092782223,
+    "Longitude": 0
+  },
+  {
+    "id": "APMC",
+    "text": "APMC",
+    "Latitude": 3.9915426391940003,
+    "Longitude": 1.0141697003641001
+  },
+  {
+    "id": "JVRJ",
+    "text": "Jivraj Park",
+    "Latitude": 3.8628580904606,
+    "Longitude": 0.89151498179808
+  },
+  {
+    "id": "RNMS",
+    "text": "Rajivnagar",
+    "Latitude": 3.7928775755566,
+    "Longitude": 0.9983758050968901
+  },
+  {
+    "id": "SRYS",
+    "text": "Shreyas",
+    "Latitude": 3.7253845197131,
+    "Longitude": 1.4204424530943998
+  },
+  {
+    "id": "PLDI",
+    "text": "Paldi",
+    "Latitude": 3.6459516603789,
+    "Longitude": 1.8603192383088
+  },
+  {
+    "id": "GRMS",
+    "text": "Gandhigram",
+    "Latitude": 3.502176526678,
+    "Longitude": 2.0800896107535998
+  },
+  {
+    "id": "UPMS",
+    "text": "Usmanpura",
+    "Latitude": 3.1929024501472,
+    "Longitude": 1.9486978437414002
+  },
+  {
+    "id": "VRMS",
+    "text": "Vijaynagar",
+    "Latitude": 3.0214336055719,
+    "Longitude": 1.8630075609074002
+  },
+  {
+    "id": "VDMS",
+    "text": "Vadaj",
+    "Latitude": 2.8305625803242,
+    "Longitude": 1.9759171100533999
+  },
+  {
+    "id": "RNIP",
+    "text": "Ranip",
+    "Latitude": 2.8315575639484,
+    "Longitude": 2.2507980957715
+  },
+  {
+    "id": "SBRS",
+    "text": "Sabarmati Railway Station",
+    "Latitude": 2.7975622901205996,
+    "Longitude": 2.6772332679924
+  },
+  {
+    "id": "AEC",
+    "text": "AEC",
+    "Latitude": 2.7075162721279997,
+    "Longitude": 2.8990198823857996
+  },
+  {
+    "id": "SMMS",
+    "text": "Sabarmati",
+    "Latitude": 2.5330624766801,
+    "Longitude": 2.8623914869787
+  },
+  {
+    "id": "MTRS",
+    "text": "Motera Stadium",
+    "Latitude": 2.3503171510302,
+    "Longitude": 3.0119294315318
+  },
+  {
+    "id": "VIKC",
+    "text": "Vishwakarma College",
+    "Latitude": 2.0581236267153,
+    "Longitude": 3.4121534584149997
+  },
+  {
+    "id": "TAPC",
+    "text": "Tapovan Circle",
+    "Latitude": 1.9599519091248,
+    "Longitude": 3.6591430971717
+  },
+  {
+    "id": "NAMC",
+    "text": "Narmada Canal",
+    "Latitude": 1.8753783010654002,
+    "Longitude": 3.8745449453936
+  },
+  {
+    "id": "KOBC",
+    "text": "Koba Circle",
+    "Latitude": 1.7614526760914,
+    "Longitude": 4.1645477457295
+  },
+  {
+    "id": "JUKB",
+    "text": "Juna Koba",
+    "Latitude": 1.6020894656109,
+    "Longitude": 4.416577989359
+  },
+  {
+    "id": "KOBG",
+    "text": "Koba Gam",
+    "Latitude": 1.5083951743295,
+    "Longitude": 4.5970316437975
+  },
+  {
+    "id": "RAYN",
+    "text": "Raysan",
+    "Latitude": 1.1976286223623,
+    "Longitude": 4.7495939512741
+  },
+  {
+    "id": "RADN",
+    "text": "Randesan",
+    "Latitude": 0.98785290825422,
+    "Longitude": 4.7149817978157
+  },
+  {
+    "id": "DHKU",
+    "text": "Dholakuva Circle",
+    "Latitude": 0.87442477509224,
+    "Longitude": 4.5815737888548
+  },
+  {
+    "id": "INFC",
+    "text": "Infocity",
+    "Latitude": 0.76298660917876,
+    "Longitude": 4.4599271912631
+  },
+  {
+    "id": "SEOA",
+    "text": "Sector-1",
+    "Latitude": 0.55122092782227,
+    "Longitude": 4.5822458695042005
+  },
+  {
+    "id": "SEAO",
+    "text": "Sector 10A",
+    "Latitude": 0.46216989345382997,
+    "Longitude": 4.8635116213949
+  },
+  {
+    "id": "SVAL",
+    "text": "Sachivalaya",
+    "Latitude": 0.3903652419054,
+    "Longitude": 5.0973956874825
+  },
+  {
+    "id": "AKDM",
+    "text": "Akshardham",
+    "Latitude": 0.24758509182868998,
+    "Longitude": 5.2832259871187
+  },
+  {
+    "id": "JUSL",
+    "text": "Juna Sachivalaya",
+    "Latitude": 0.15836822685628,
+    "Longitude": 5.1232707924952
+  },
+  {
+    "id": "SEAF",
+    "text": "Sector-16",
+    "Latitude": 0.076613739065589,
+    "Longitude": 4.8114253710445
+  },
+  {
+    "id": "SEBD",
+    "text": "Sector-24",
+    "Latitude": 0,
+    "Longitude": 4.5210865303836
+  },
+  {
+    "id": "MAHM",
+    "text": "Mahatama Mandir",
+    "Latitude": 0.079101198126124,
+    "Longitude": 4.2556146737611
+  },
+  {
+    "id": "PDEU",
+    "text": "PDEU",
+    "Latitude": 1.3868413415696,
+    "Longitude": 5.1840940912908
+  },
+  {
+    "id": "GIFC",
+    "text": "Gift City",
+    "Latitude": 1.4122134239874,
+    "Longitude": 6
+  },
+  {
+    "id": "SHPR",
+    "text": "Shahpur",
+    "Latitude": 1.0547,
+    "Longitude": 5.5976
+  },
+  {
+    "id": "GBTU",
+    "text": "Gujarat Biotechnology University",
+    "Latitude": 1.1643000000000001,
+    "Longitude": 5.5994
+  },
+  {
+    "id": "GFTH",
+    "text": "GIFT City House",
+    "Latitude": 1.2472,
+    "Longitude": 5.921900000000001
+  },
+  {
+    "id": "ASRD",
+    "text": "Ashram Road",
+    "Latitude": 2.2957,
+    "Longitude": 3.3049
+  },
+  {
+    "id": "KTPM",
+    "text": "Koteshwar Prachin Mandir",
+    "Latitude": 2.3882,
+    "Longitude": 3.6258999999999997
+  },
+  {
+    "id": "SBRV",
+    "text": "Sabarmati River",
+    "Latitude": 2.3851,
+    "Longitude": 3.8691000000000004
+  },
+  {
+    "id": "SDRN",
+    "text": "Sardarnagar",
+    "Latitude": 2.5540000000000003,
+    "Longitude": 3.824
+  },
+  {
+    "id": "ARPT",
+    "text": "Airport",
+    "Latitude": 2.736,
+    "Longitude": 3.8608
+  },
+  {
+    "id": "OHCI",
+    "text": "Old High Court",
+    "Latitude": null,
+    "Longitude": 0.01
+  },
+  {
+    "id": "KORD",
+    "text": "Koteshwar Road",
+    "Latitude": null,
+    "Longitude": 0.01
+  },
+  {
+    "id": "GNLU",
+    "text": "GNLU",
+    "Latitude": null,
+    "Longitude": 0.01
+  }
+]
