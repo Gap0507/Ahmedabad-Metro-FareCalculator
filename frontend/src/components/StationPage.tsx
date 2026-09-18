@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import { ArrowLeftIcon } from '@radix-ui/react-icons';
 import { use, type ReactNode } from 'react';
 

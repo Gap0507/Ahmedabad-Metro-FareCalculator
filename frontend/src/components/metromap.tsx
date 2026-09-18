@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import React, { forwardRef } from 'react';
 
 export interface MapTransform {
@@ -29,7 +29,7 @@ interface MapProps {
 const transformToString = ({ scaleX, scaleY, translateX, translateY }: MapTransform) =>
     `matrix(${scaleX} 0 0 ${scaleY} ${translateX} ${translateY})`;
 
-// â”€â”€â”€ Ahmedabad Metro map data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Ahmedabad Metro map data ────────────────────────────────────────
 // Exact coordinates from the reference HTML map (ahemdabad.html)
 
 interface StationData {
@@ -182,7 +182,7 @@ const EDGES: EdgeData[] = [
 const stationIndex: Record<string, StationData> = {};
 STATIONS.forEach(s => { stationIndex[s.id] = s; });
 
-// â”€â”€â”€ Component â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Component ───────────────────────────────────────────────────────
 
 const SvgComponent = forwardRef<SVGSVGElement, MapProps>(
     ({ style, mapGroupRef, zoomFunction, train, onMapClick }: MapProps, ref) => (
@@ -205,7 +205,7 @@ const SvgComponent = forwardRef<SVGSVGElement, MapProps>(
                 ref={mapGroupRef}
                 transform={transformToString(zoomFunction.transform)}
             >
-                {/* â”€â”€ Lines â”€â”€ */}
+                {/* ── Lines ── */}
                 <g className="lines" fill="none" strokeLinecap="round">
                     {EDGES.map((e) => {
                         const a = stationIndex[e.a];
@@ -228,7 +228,7 @@ const SvgComponent = forwardRef<SVGSVGElement, MapProps>(
                     })}
                 </g>
 
-                {/* â”€â”€ Stations â”€â”€ */}
+                {/* ── Stations ── */}
                 <g className="stationes">
                     {STATIONS.map((s) => (
                         <g key={s.id}>

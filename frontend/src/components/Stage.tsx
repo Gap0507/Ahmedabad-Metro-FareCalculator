@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { PauseIcon, PlayIcon } from '@radix-ui/react-icons';
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
@@ -109,17 +109,17 @@ const RouteSummaryCards = memo(function RouteSummaryCards({ route }: RouteSummar
         <div className="grid grid-cols-3 gap-2">
             <div className="rounded-lg bg-neutral-100 p-2 dark:bg-zinc-800">
                 <p className="text-xs font-medium text-neutral-500 dark:text-zinc-400">{t('fare')}</p>
-                <p className="mt-0.5 text-base font-semibold">{route ? `â‚¹${route.fare}` : 'â€”'}</p>
+                <p className="mt-0.5 text-base font-semibold">{route ? `₹${route.fare}` : '—'}</p>
                 {route ? <p className="mt-0.5 text-xs font-medium text-neutral-500 dark:text-zinc-400">{t(route.fareType === 'airport-express' ? 'specialFare' : 'holidayFare', { fare: route.holidayFare })}</p> : null}
             </div>
             <div className="rounded-lg bg-neutral-100 p-2 dark:bg-zinc-800">
                 <p className="text-xs font-medium text-neutral-500 dark:text-zinc-400">{t('stops')}</p>
-                <p className="mt-0.5 text-base font-semibold">{route ? route.distance : 'â€”'}</p>
+                <p className="mt-0.5 text-base font-semibold">{route ? route.distance : '—'}</p>
                 {route ? <p className="mt-0.5 text-xs font-medium text-neutral-500 dark:text-zinc-400">{t('distanceKm', { count: route.distanceKm })}</p> : null}
             </div>
             <div className="rounded-lg bg-neutral-100 p-2 dark:bg-zinc-800">
                 <p className="text-xs font-medium text-neutral-500 dark:text-zinc-400">{t('time')}</p>
-                <p className="mt-0.5 text-base font-semibold">{route ? t('minutesShort', { count: route.estimatedMinutes }) : 'â€”'}</p>
+                <p className="mt-0.5 text-base font-semibold">{route ? t('minutesShort', { count: route.estimatedMinutes }) : '—'}</p>
                 {route ? <p className="mt-0.5 text-xs font-medium text-neutral-500 dark:text-zinc-400">{t('timeLimit', { count: route.timeLimitMinutes })}</p> : null}
             </div>
         </div>
@@ -234,7 +234,7 @@ function RouteOptions({
                                             <InterchangeIcon />
                                             {routeOption.route.interchanges.length}
                                         </span>
-                                        <span className="shrink-0 text-right">â‚¹{routeOption.route.fare}</span>
+                                        <span className="shrink-0 text-right">₹{routeOption.route.fare}</span>
                                     </span>
 
                                     <span className="grid gap-1">

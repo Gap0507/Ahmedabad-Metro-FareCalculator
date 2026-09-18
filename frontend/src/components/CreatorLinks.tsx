@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import { CheckIcon, ClipboardCopyIcon, GitHubLogoIcon, LinkedInLogoIcon, PlayIcon } from '@radix-ui/react-icons';
 import { memo, useState } from 'react';
 

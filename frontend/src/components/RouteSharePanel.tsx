@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import { DownloadIcon, ExternalLinkIcon, InstagramLogoIcon, Link2Icon, Share2Icon, TwitterLogoIcon } from '@radix-ui/react-icons';
 import { toPng } from 'html-to-image';
 import { memo, useMemo, useRef, useState } from 'react';
@@ -93,7 +93,7 @@ function RouteSharePanel({ route, fromName, toName }: RouteSharePanelProps) {
                 <div className="grid grid-cols-3 gap-2">
                     <div className="rounded-lg bg-neutral-100 p-2 dark:bg-zinc-800">
                         <p className="text-xs font-medium text-neutral-500 dark:text-zinc-400">{t('fare')}</p>
-                        <p className="mt-1 text-base font-semibold">â‚¹{route.fare}</p>
+                        <p className="mt-1 text-base font-semibold">₹{route.fare}</p>
                         <p className="mt-0.5 text-xs font-medium text-neutral-500 dark:text-zinc-400">{t(route.fareType === 'airport-express' ? 'specialFare' : 'holidayFare', { fare: route.holidayFare })}</p>
                     </div>
                     <div className="rounded-lg bg-neutral-100 p-2 dark:bg-zinc-800">

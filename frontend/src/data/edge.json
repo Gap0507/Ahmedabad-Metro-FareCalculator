@@ -1,4 +1,4 @@
-﻿[
+[
   { "from": "VTLG", "to": "NTCR", "stroke": "#1F5CA8", "path": "M538.98 400 L510.31 394.64" },
   { "from": "NTCR", "to": "VSTL", "stroke": "#1F5CA8", "path": "M510.31 394.64 L469.92 389.07" },
   { "from": "VSTL", "to": "RBCY", "stroke": "#1F5CA8", "path": "M469.92 389.07 L431.61 386.24" },

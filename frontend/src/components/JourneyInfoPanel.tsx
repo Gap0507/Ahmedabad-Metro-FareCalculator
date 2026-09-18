@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import { useState } from 'react';
 
 import { getLocalizedStationName, useI18n } from '../i18n';

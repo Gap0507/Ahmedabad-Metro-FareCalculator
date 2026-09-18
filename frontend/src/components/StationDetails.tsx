@@ -188,7 +188,7 @@ function FacilitiesTab({ station }: { station: StationInfo }) {
                             <p className="text-sm font-semibold">{lineLabel(item.provider)}</p>
                             <p className="mt-1 text-sm text-neutral-600 dark:text-zinc-400">{lineLabel(item.location)}</p>
                             <p className="mt-1 text-xs font-semibold text-neutral-500 dark:text-zinc-500">
-                                Cars {countNumber(item.carCapacity)} Â· Bikes {countNumber(item.motorcycleCapacity)} Â· Cycles {countNumber(item.cycleCapacity)}
+                                Cars {countNumber(item.carCapacity)} · Bikes {countNumber(item.motorcycleCapacity)} · Cycles {countNumber(item.cycleCapacity)}
                             </p>
                         </div>
                     ))}
@@ -206,7 +206,7 @@ function FacilitiesTab({ station }: { station: StationInfo }) {
                             </div>
                             <p className="mt-1 text-sm text-neutral-600 dark:text-zinc-400">{lineLabel(lift.location)}</p>
                             <p className="mt-1 text-xs font-semibold text-neutral-500 dark:text-zinc-500">
-                                {lineLabel(lift.insideOutside)}{lift.divyangFriendly ? ' Â· Divyang friendly' : ''}
+                                {lineLabel(lift.insideOutside)}{lift.divyangFriendly ? ' · Divyang friendly' : ''}
                             </p>
                         </div>
                     ))}
@@ -242,8 +242,8 @@ function NearbyTab({ station }: { station: StationInfo }) {
                                 <p className="mt-1 text-sm text-neutral-600 dark:text-zinc-400">{lineLabel(place.type)}</p>
                                 <p className="mt-1 text-xs font-semibold text-neutral-500 dark:text-zinc-500">
                                     {typeof place.distanceKm === 'number' ? `${place.distanceKm} km` : 'Distance not listed'}
-                                    {typeof place.estimatedWalkingMinutes === 'number' ? ` Â· ${place.estimatedWalkingMinutes} min walk` : ''}
-                                    {typeof place.estimatedPublicTransportMinutes === 'number' ? ` Â· ${place.estimatedPublicTransportMinutes} min transit` : ''}
+                                    {typeof place.estimatedWalkingMinutes === 'number' ? ` · ${place.estimatedWalkingMinutes} min walk` : ''}
+                                    {typeof place.estimatedPublicTransportMinutes === 'number' ? ` · ${place.estimatedPublicTransportMinutes} min transit` : ''}
                                 </p>
                             </article>
                         ))}

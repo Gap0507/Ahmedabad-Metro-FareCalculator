@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import { DownloadIcon } from '@radix-ui/react-icons';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { toPng } from 'html-to-image';

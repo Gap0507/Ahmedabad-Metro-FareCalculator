@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 'use client';
 import {
   DiscIcon,
@@ -17,7 +17,7 @@ import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 
 import edges from '../data/edge.json';
 import stationLabels from '../data/stations-lite.json';
-import MetroTrain from '../assets/metro.svg?react';
+import MetroTrain from '../assets/MetroTrain';
 import Map, { type MapControls, type MapTransform } from './metromap';
 import { getLocalizedStationName, useI18n } from '../i18n';
 import type { CinematicZoomLevel, RouteAnimationMode, RouteSummary } from '../types/route';
@@ -291,12 +291,12 @@ const getRouteEdge = (from: string, to: string) =>
   edges.find((edge) => edge.from === to && edge.to === from);
 
 const lineNames: Record<string, Record<keyof typeof shortsLanguageCode, string>> = {
-  '#1F5CA8': { en: 'Blue Line', hi: 'à¤¬à¥à¤²à¥‚ à¤²à¤¾à¤‡à¤¨', mr: 'à¤¬à¥à¤²à¥‚ à¤²à¤¾à¤‡à¤¨', bn: 'à¦¬à§à¦²à§ à¦²à¦¾à¦‡à¦¨', pa: 'à¨¬à¨²à©‚ à¨²à¨¾à¨ˆà¨¨' },
-  '#E4231C': { en: 'Red Line', hi: 'à¤°à¥‡à¤¡ à¤²à¤¾à¤‡à¤¨', mr: 'à¤°à¥‡à¤¡ à¤²à¤¾à¤‡à¤¨', bn: 'à¦°à§‡à¦¡ à¦²à¦¾à¦‡à¦¨', pa: 'à¨°à©ˆà©±à¨¡ à¨²à¨¾à¨ˆà¨¨' },
-  '#F5D618': { en: 'Yellow Line', hi: 'à¤¯à¥‡à¤²à¥‹ à¤²à¤¾à¤‡à¤¨', mr: 'à¤¯à¥‡à¤²à¥‹ à¤²à¤¾à¤‡à¤¨', bn: 'à¦‡à¦¯à¦¼à§‡à¦²à§‹ à¦²à¦¾à¦‡à¦¨', pa: 'à¨¯à©ˆà¨²à©‹ à¨²à¨¾à¨ˆà¨¨' },
-  '#7B1FA2': { en: 'Purple Line', hi: 'à¤ªà¤°à¥à¤ªà¤² à¤²à¤¾à¤‡à¤¨', mr: 'à¤ªà¤°à¥à¤ªà¤² à¤²à¤¾à¤‡à¤¨', bn: 'à¦ªà¦¾à¦°à§à¦ªà¦² à¦²à¦¾à¦‡à¦¨', pa: 'à¨ªà¨°à¨ªà¨² à¨²à¨¾à¨ˆà¨¨' },
-  '#56CCF2': { en: 'Cyan Line', hi: 'à¤¸à¤¿à¤¯à¤¾à¤¨ à¤²à¤¾à¤‡à¤¨', mr: 'à¤¸à¤¿à¤¯à¤¾à¤¨ à¤²à¤¾à¤‡à¤¨', bn: 'à¦¸à¦¾à¦¯à¦¼à¦¾à¦¨ à¦²à¦¾à¦‡à¦¨', pa: 'à¨¸à¨¿à¨†à¨¨ à¨²à¨¾à¨ˆà¨¨' },
-  '#FF00A8': { en: 'Pink Line', hi: 'à¤ªà¤¿à¤‚à¤• à¤²à¤¾à¤‡à¤¨', mr: 'à¤ªà¤¿à¤‚à¤• à¤²à¤¾à¤‡à¤¨', bn: 'à¦ªà¦¿à¦™à§à¦• à¦²à¦¾à¦‡à¦¨', pa: 'à¨ªà¨¿à©°à¨• à¨²à¨¾à¨ˆà¨¨' },
+  '#1F5CA8': { en: 'Blue Line', hi: 'ब्लू लाइन', mr: 'ब्लू लाइन', bn: 'ব্লু লাইন', pa: 'ਬਲੂ ਲਾਈਨ' },
+  '#E4231C': { en: 'Red Line', hi: 'रेड लाइन', mr: 'रेड लाइन', bn: 'রেড লাইন', pa: 'ਰੈੱਡ ਲਾਈਨ' },
+  '#F5D618': { en: 'Yellow Line', hi: 'येलो लाइन', mr: 'येलो लाइन', bn: 'ইয়েলো লাইন', pa: 'ਯੈਲੋ ਲਾਈਨ' },
+  '#7B1FA2': { en: 'Purple Line', hi: 'पर्पल लाइन', mr: 'पर्पल लाइन', bn: 'পার্পল লাইন', pa: 'ਪਰਪਲ ਲਾਈਨ' },
+  '#56CCF2': { en: 'Cyan Line', hi: 'सियान लाइन', mr: 'सियान लाइन', bn: 'সায়ান লাইন', pa: 'ਸਿਆਨ ਲਾਈਨ' },
+  '#FF00A8': { en: 'Pink Line', hi: 'पिंक लाइन', mr: 'पिंक लाइन', bn: 'পিঙ্ক লাইন', pa: 'ਪਿੰਕ ਲਾਈਨ' },
 };
 
 const getLineName = (color: string, language: keyof typeof shortsLanguageCode) =>
@@ -364,43 +364,43 @@ const makeShortsScriptSegments = (
   const interchangeDirections = directionSteps.slice(1);
   const routeIntro = {
     en: `We are travelling from ${fromName} to ${toName} by ahmedabad Metro.`,
-    hi: `à¤¹à¤® à¤¦à¤¿à¤²à¥à¤²à¥€ à¤®à¥‡à¤Ÿà¥à¤°à¥‹ à¤¸à¥‡ ${fromName} à¤¸à¥‡ ${toName} à¤¤à¤• à¤¯à¤¾à¤¤à¥à¤°à¤¾ à¤•à¤° à¤°à¤¹à¥‡ à¤¹à¥ˆà¤‚.`,
-    mr: `à¤†à¤ªà¤£ à¤¦à¤¿à¤²à¥à¤²à¥€ à¤®à¥‡à¤Ÿà¥à¤°à¥‹à¤¨à¥‡ ${fromName} à¤¤à¥‡ ${toName} à¤ªà¥à¤°à¤µà¤¾à¤¸ à¤•à¤°à¤¤ à¤†à¤¹à¥‹à¤¤.`,
-    bn: `à¦†à¦®à¦°à¦¾ à¦¦à¦¿à¦²à§à¦²à¦¿ à¦®à§‡à¦Ÿà§à¦°à§‹à¦¤à§‡ ${fromName} à¦¥à§‡à¦•à§‡ ${toName} à¦¯à¦¾à¦šà§à¦›à¦¿.`,
-    pa: `à¨…à¨¸à©€à¨‚ à¨¦à¨¿à©±à¨²à©€ à¨®à©ˆà¨Ÿà¨°à©‹ à¨°à¨¾à¨¹à©€à¨‚ ${fromName} à¨¤à©‹à¨‚ ${toName} à¨œà¨¾ à¨°à¨¹à©‡ à¨¹à¨¾à¨‚.`,
+    hi: `हम दिल्ली मेट्रो से ${fromName} से ${toName} तक यात्रा कर रहे हैं.`,
+    mr: `आपण दिल्ली मेट्रोने ${fromName} ते ${toName} प्रवास करत आहोत.`,
+    bn: `আমরা দিল্লি মেট্রোতে ${fromName} থেকে ${toName} যাচ্ছি.`,
+    pa: `ਅਸੀਂ ਦਿੱਲੀ ਮੈਟਰੋ ਰਾਹੀਂ ${fromName} ਤੋਂ ${toName} ਜਾ ਰਹੇ ਹਾਂ.`,
   }[language];
   const directionSentence = firstDirection
     ? {
       en: `From ${fromName}, take the ${firstDirection.lineName} toward ${firstDirection.terminalName}.`,
-      hi: `${fromName} à¤¸à¥‡ ${firstDirection.lineName} à¤²à¥‡à¤‚, ${firstDirection.terminalName} à¤•à¥€ à¤“à¤°.`,
-      mr: `${fromName} à¤ªà¤¾à¤¸à¥‚à¤¨ ${firstDirection.lineName} à¤˜à¥à¤¯à¤¾, ${firstDirection.terminalName} à¤šà¥à¤¯à¤¾ à¤¦à¤¿à¤¶à¥‡à¤¨à¥‡.`,
-      bn: `${fromName} à¦¥à§‡à¦•à§‡ ${firstDirection.lineName} à¦§à¦°à§à¦¨, ${firstDirection.terminalName} à¦à¦° à¦¦à¦¿à¦•à§‡.`,
-      pa: `${fromName} à¨¤à©‹à¨‚ ${firstDirection.lineName} à¨²à¨µà©‹, ${firstDirection.terminalName} à¨µà©±à¨².`,
+      hi: `${fromName} से ${firstDirection.lineName} लें, ${firstDirection.terminalName} की ओर.`,
+      mr: `${fromName} पासून ${firstDirection.lineName} घ्या, ${firstDirection.terminalName} च्या दिशेने.`,
+      bn: `${fromName} থেকে ${firstDirection.lineName} ধরুন, ${firstDirection.terminalName} এর দিকে.`,
+      pa: `${fromName} ਤੋਂ ${firstDirection.lineName} ਲਵੋ, ${firstDirection.terminalName} ਵੱਲ.`,
     }[language]
     : {
       en: `Start at ${fromName} and follow this route step by step.`,
-      hi: `${fromName} à¤¸à¥‡ à¤¶à¥à¤°à¥‚ à¤•à¤°à¥‡à¤‚ à¤”à¤° à¤‡à¤¸ à¤°à¥‚à¤Ÿ à¤•à¥‹ à¤¸à¥à¤Ÿà¥‡à¤ª à¤¬à¤¾à¤¯ à¤¸à¥à¤Ÿà¥‡à¤ª à¤«à¥‰à¤²à¥‹ à¤•à¤°à¥‡à¤‚.`,
-      mr: `${fromName} à¤ªà¤¾à¤¸à¥‚à¤¨ à¤¸à¥à¤°à¥‚ à¤•à¤°à¤¾ à¤†à¤£à¤¿ à¤¹à¤¾ à¤®à¤¾à¤°à¥à¤— à¤¸à¥à¤Ÿà¥‡à¤ª à¤¬à¤¾à¤¯ à¤¸à¥à¤Ÿà¥‡à¤ª à¤«à¥‰à¤²à¥‹ à¤•à¤°à¤¾.`,
-      bn: `${fromName} à¦¥à§‡à¦•à§‡ à¦¶à§à¦°à§ à¦•à¦°à§à¦¨ à¦à¦¬à¦‚ à¦à¦‡ à¦°à§à¦Ÿà¦Ÿà¦¿ à¦§à¦¾à¦ªà§‡ à¦§à¦¾à¦ªà§‡ à¦«à¦²à§‹ à¦•à¦°à§à¦¨.`,
-      pa: `${fromName} à¨¤à©‹à¨‚ à¨¸à¨¼à©à¨°à©‚ à¨•à¨°à©‹ à¨…à¨¤à©‡ à¨‡à¨¸ à¨°à©‚à¨Ÿ à¨¨à©‚à©° à¨¸à¨Ÿà©ˆà¨ª à¨¬à¨¾à¨ˆ à¨¸à¨Ÿà©ˆà¨ª à¨«à¨¾à¨²à©‹ à¨•à¨°à©‹.`,
+      hi: `${fromName} से शुरू करें और इस रूट को स्टेप बाय स्टेप फॉलो करें.`,
+      mr: `${fromName} पासून सुरू करा आणि हा मार्ग स्टेप बाय स्टेप फॉलो करा.`,
+      bn: `${fromName} থেকে শুরু করুন এবং এই রুটটি ধাপে ধাপে ফলো করুন.`,
+      pa: `${fromName} ਤੋਂ ਸ਼ੁਰੂ ਕਰੋ ਅਤੇ ਇਸ ਰੂਟ ਨੂੰ ਸਟੈਪ ਬਾਈ ਸਟੈਪ ਫਾਲੋ ਕਰੋ.`,
     }[language];
   const interchangeSegments = interchangeDirections.map((step) => ({
     text: {
       en: `At ${step.stationName}, change to the ${step.lineName} toward ${step.terminalName}.`,
-      hi: `${step.stationName} à¤ªà¤° ${step.lineName} à¤¬à¤¦à¤²à¥‡à¤‚, ${step.terminalName} à¤•à¥€ à¤“à¤°.`,
-      mr: `${step.stationName} à¤¯à¥‡à¤¥à¥‡ ${step.lineName} à¤¬à¤¦à¤²à¤¾, ${step.terminalName} à¤šà¥à¤¯à¤¾ à¤¦à¤¿à¤¶à¥‡à¤¨à¥‡.`,
-      bn: `${step.stationName} à¦ ${step.lineName} à¦¬à¦¦à¦²à¦¾à¦¨, ${step.terminalName} à¦à¦° à¦¦à¦¿à¦•à§‡.`,
-      pa: `${step.stationName} à¨¤à©‡ ${step.lineName} à¨¬à¨¦à¨²à©‹, ${step.terminalName} à¨µà©±à¨².`,
+      hi: `${step.stationName} पर ${step.lineName} बदलें, ${step.terminalName} की ओर.`,
+      mr: `${step.stationName} येथे ${step.lineName} बदला, ${step.terminalName} च्या दिशेने.`,
+      bn: `${step.stationName} এ ${step.lineName} বদলান, ${step.terminalName} এর দিকে.`,
+      pa: `${step.stationName} ਤੇ ${step.lineName} ਬਦਲੋ, ${step.terminalName} ਵੱਲ.`,
     }[language],
     stationId: step.stationId,
   }));
   const noInterchangeSegment: ShortsScriptSegment = {
     text: {
       en: 'No line change is needed on this route.',
-      hi: 'à¤‡à¤¸ à¤°à¥‚à¤Ÿ à¤®à¥‡à¤‚ à¤²à¤¾à¤‡à¤¨ à¤¬à¤¦à¤²à¤¨à¥‡ à¤•à¥€ à¤œà¤°à¥‚à¤°à¤¤ à¤¨à¤¹à¥€à¤‚ à¤¹à¥ˆ.',
-      mr: 'à¤¯à¤¾ à¤®à¤¾à¤°à¥à¤—à¤¾à¤µà¤° à¤²à¤¾à¤‡à¤¨ à¤¬à¤¦à¤²à¤£à¥à¤¯à¤¾à¤šà¥€ à¤—à¤°à¤œ à¤¨à¤¾à¤¹à¥€.',
-      bn: 'à¦à¦‡ à¦°à§à¦Ÿà§‡ à¦²à¦¾à¦‡à¦¨ à¦¬à¦¦à¦²à¦¾à¦¨à§‹à¦° à¦¦à¦°à¦•à¦¾à¦° à¦¨à§‡à¦‡.',
-      pa: 'à¨‡à¨¸ à¨°à©‚à¨Ÿ à¨¤à©‡ à¨²à¨¾à¨ˆà¨¨ à¨¬à¨¦à¨²à¨£ à¨¦à©€ à¨²à©‹à©œ à¨¨à¨¹à©€à¨‚ à¨¹à©ˆ.',
+      hi: 'इस रूट में लाइन बदलने की जरूरत नहीं है.',
+      mr: 'या मार्गावर लाइन बदलण्याची गरज नाही.',
+      bn: 'এই রুটে লাইন বদলানোর দরকার নেই.',
+      pa: 'ਇਸ ਰੂਟ ਤੇ ਲਾਈਨ ਬਦਲਣ ਦੀ ਲੋੜ ਨਹੀਂ ਹੈ.',
     }[language],
   };
 
@@ -417,38 +417,38 @@ const makeShortsScriptSegments = (
     hi: [
       { text: routeIntro, stationId: route.from },
       { text: directionSentence, stationId: firstDirection?.stationId || route.from },
-      { text: `à¤‡à¤¸ à¤¯à¤¾à¤¤à¥à¤°à¤¾ à¤®à¥‡à¤‚ ${route.distance} à¤¸à¥à¤Ÿà¥‡à¤¶à¤¨ à¤¹à¥ˆà¤‚ à¤”à¤° à¤²à¤—à¤­à¤— ${route.estimatedMinutes} à¤®à¤¿à¤¨à¤Ÿ à¤²à¤—à¥‡à¤‚à¤—à¥‡.` },
-      { text: `à¤•à¤¿à¤°à¤¾à¤¯à¤¾ à¤•à¤°à¥€à¤¬ ${route.fare} à¤°à¥à¤ªà¤¯à¥‡ à¤¹à¥ˆ.` },
+      { text: `इस यात्रा में ${route.distance} स्टेशन हैं और लगभग ${route.estimatedMinutes} मिनट लगेंगे.` },
+      { text: `किराया करीब ${route.fare} रुपये है.` },
       ...(interchangeSegments.length ? interchangeSegments : [noInterchangeSegment]),
-      { text: `à¤†à¤ªà¤•à¤¾ à¤†à¤–à¤¿à¤°à¥€ à¤¸à¥à¤Ÿà¥‡à¤¶à¤¨ ${toName} à¤¹à¥ˆ.`, stationId: route.to },
-      { text: 'à¤…à¤ªà¤¨à¥€ à¤¦à¤¿à¤²à¥à¤²à¥€ à¤®à¥‡à¤Ÿà¥à¤°à¥‹ à¤¯à¤¾à¤¤à¥à¤°à¤¾ metro dot coolhead dot in à¤ªà¤° à¤ªà¥à¤²à¤¾à¤¨ à¤•à¤°à¥‡à¤‚.', stationId: route.to },
+      { text: `आपका आखिरी स्टेशन ${toName} है.`, stationId: route.to },
+      { text: 'अपनी दिल्ली मेट्रो यात्रा metro dot coolhead dot in पर प्लान करें.', stationId: route.to },
     ],
     mr: [
       { text: routeIntro, stationId: route.from },
       { text: directionSentence, stationId: firstDirection?.stationId || route.from },
-      { text: `à¤¯à¤¾ à¤ªà¥à¤°à¤µà¤¾à¤¸à¤¾à¤¤ ${route.distance} à¤¸à¥à¤¥à¤¾à¤¨à¤•à¥‡ à¤†à¤¹à¥‡à¤¤ à¤†à¤£à¤¿ à¤¸à¥à¤®à¤¾à¤°à¥‡ ${route.estimatedMinutes} à¤®à¤¿à¤¨à¤¿à¤Ÿà¥‡ à¤²à¤¾à¤—à¤¤à¥€à¤².` },
-      { text: `à¤­à¤¾à¤¡à¥‡ à¤¸à¥à¤®à¤¾à¤°à¥‡ ${route.fare} à¤°à¥à¤ªà¤¯à¥‡ à¤†à¤¹à¥‡.` },
+      { text: `या प्रवासात ${route.distance} स्थानके आहेत आणि सुमारे ${route.estimatedMinutes} मिनिटे लागतील.` },
+      { text: `भाडे सुमारे ${route.fare} रुपये आहे.` },
       ...(interchangeSegments.length ? interchangeSegments : [noInterchangeSegment]),
-      { text: `à¤¤à¥à¤®à¤šà¥‡ à¤¶à¥‡à¤µà¤Ÿà¤šà¥‡ à¤¸à¥à¤¥à¤¾à¤¨à¤• ${toName} à¤†à¤¹à¥‡.`, stationId: route.to },
-      { text: 'à¤¤à¥à¤®à¤šà¤¾ à¤¦à¤¿à¤²à¥à¤²à¥€ à¤®à¥‡à¤Ÿà¥à¤°à¥‹ à¤ªà¥à¤°à¤µà¤¾à¤¸ metro dot coolhead dot in à¤µà¤° à¤ªà¥à¤²à¤¾à¤¨ à¤•à¤°à¤¾.', stationId: route.to },
+      { text: `तुमचे शेवटचे स्थानक ${toName} आहे.`, stationId: route.to },
+      { text: 'तुमचा दिल्ली मेट्रो प्रवास metro dot coolhead dot in वर प्लान करा.', stationId: route.to },
     ],
     bn: [
       { text: routeIntro, stationId: route.from },
       { text: directionSentence, stationId: firstDirection?.stationId || route.from },
-      { text: `à¦à¦‡ à¦¯à¦¾à¦¤à§à¦°à¦¾à§Ÿ ${route.distance}à¦Ÿà¦¿ à¦¸à§à¦Ÿà§‡à¦¶à¦¨ à¦†à¦›à§‡ à¦à¦¬à¦‚ à¦ªà§à¦°à¦¾à§Ÿ ${route.estimatedMinutes} à¦®à¦¿à¦¨à¦¿à¦Ÿ à¦²à¦¾à¦—à¦¬à§‡.` },
-      { text: `à¦­à¦¾à§œà¦¾ à¦ªà§à¦°à¦¾à§Ÿ ${route.fare} à¦Ÿà¦¾à¦•à¦¾.` },
+      { text: `এই যাত্রায় ${route.distance}টি স্টেশন আছে এবং প্রায় ${route.estimatedMinutes} মিনিট লাগবে.` },
+      { text: `ভাড়া প্রায় ${route.fare} টাকা.` },
       ...(interchangeSegments.length ? interchangeSegments : [noInterchangeSegment]),
-      { text: `à¦†à¦ªà¦¨à¦¾à¦° à¦¶à§‡à¦· à¦¸à§à¦Ÿà§‡à¦¶à¦¨ ${toName}.`, stationId: route.to },
-      { text: 'à¦†à¦ªà¦¨à¦¾à¦° à¦¦à¦¿à¦²à§à¦²à¦¿ à¦®à§‡à¦Ÿà§à¦°à§‹ à¦¯à¦¾à¦¤à§à¦°à¦¾ metro dot coolhead dot in à¦ à¦ªà§à¦²à§à¦¯à¦¾à¦¨ à¦•à¦°à§à¦¨.', stationId: route.to },
+      { text: `আপনার শেষ স্টেশন ${toName}.`, stationId: route.to },
+      { text: 'আপনার দিল্লি মেট্রো যাত্রা metro dot coolhead dot in এ প্ল্যান করুন.', stationId: route.to },
     ],
     pa: [
       { text: routeIntro, stationId: route.from },
       { text: directionSentence, stationId: firstDirection?.stationId || route.from },
-      { text: `à¨‡à¨¸ à¨¯à¨¾à¨¤à¨°à¨¾ à¨µà¨¿à©±à¨š ${route.distance} à¨¸à¨Ÿà©‡à¨¸à¨¼à¨¨ à¨¹à¨¨ à¨…à¨¤à©‡ à¨²à¨—à¨­à¨— ${route.estimatedMinutes} à¨®à¨¿à©°à¨Ÿ à¨²à©±à¨—à¨£à¨—à©‡.` },
-      { text: `à¨•à¨¿à¨°à¨¾à¨‡à¨† à¨²à¨—à¨­à¨— ${route.fare} à¨°à©à¨ªà¨ à¨¹à©ˆ.` },
+      { text: `ਇਸ ਯਾਤਰਾ ਵਿੱਚ ${route.distance} ਸਟੇਸ਼ਨ ਹਨ ਅਤੇ ਲਗਭਗ ${route.estimatedMinutes} ਮਿੰਟ ਲੱਗਣਗੇ.` },
+      { text: `ਕਿਰਾਇਆ ਲਗਭਗ ${route.fare} ਰੁਪਏ ਹੈ.` },
       ...(interchangeSegments.length ? interchangeSegments : [noInterchangeSegment]),
-      { text: `à¨¤à©à¨¹à¨¾à¨¡à¨¾ à¨†à¨–à¨°à©€ à¨¸à¨Ÿà©‡à¨¸à¨¼à¨¨ ${toName} à¨¹à©ˆ.`, stationId: route.to },
-      { text: 'à¨†à¨ªà¨£à©€ à¨¦à¨¿à©±à¨²à©€ à¨®à©ˆà¨Ÿà¨°à©‹ à¨¯à¨¾à¨¤à¨°à¨¾ metro dot coolhead dot in à¨¤à©‡ à¨ªà¨²à¨¾à¨¨ à¨•à¨°à©‹.', stationId: route.to },
+      { text: `ਤੁਹਾਡਾ ਆਖਰੀ ਸਟੇਸ਼ਨ ${toName} ਹੈ.`, stationId: route.to },
+      { text: 'ਆਪਣੀ ਦਿੱਲੀ ਮੈਟਰੋ ਯਾਤਰਾ metro dot coolhead dot in ਤੇ ਪਲਾਨ ਕਰੋ.', stationId: route.to },
     ],
   };
 
@@ -481,11 +481,11 @@ const wrapCanvasText = (
 
 const makeShortsStats = (route: RouteSummary, language: keyof typeof shortsLanguageCode) => {
   const stats = {
-    en: `${route.distance} stations â€¢ ${route.estimatedMinutes} mins â€¢ Rs ${route.fare}`,
-    hi: `${route.distance} à¤¸à¥à¤Ÿà¥‡à¤¶à¤¨ â€¢ ${route.estimatedMinutes} à¤®à¤¿à¤¨à¤Ÿ â€¢ ${route.fare} à¤°à¥à¤ªà¤¯à¥‡`,
-    mr: `${route.distance} à¤¸à¥à¤¥à¤¾à¤¨à¤•à¥‡ â€¢ ${route.estimatedMinutes} à¤®à¤¿à¤¨à¤¿à¤Ÿà¥‡ â€¢ ${route.fare} à¤°à¥à¤ªà¤¯à¥‡`,
-    bn: `${route.distance} à¦¸à§à¦Ÿà§‡à¦¶à¦¨ â€¢ ${route.estimatedMinutes} à¦®à¦¿à¦¨à¦¿à¦Ÿ â€¢ ${route.fare} à¦Ÿà¦¾à¦•à¦¾`,
-    pa: `${route.distance} à¨¸à¨Ÿà©‡à¨¸à¨¼à¨¨ â€¢ ${route.estimatedMinutes} à¨®à¨¿à©°à¨Ÿ â€¢ ${route.fare} à¨°à©à¨ªà¨`,
+    en: `${route.distance} stations • ${route.estimatedMinutes} mins • Rs ${route.fare}`,
+    hi: `${route.distance} स्टेशन • ${route.estimatedMinutes} मिनट • ${route.fare} रुपये`,
+    mr: `${route.distance} स्थानके • ${route.estimatedMinutes} मिनिटे • ${route.fare} रुपये`,
+    bn: `${route.distance} স্টেশন • ${route.estimatedMinutes} মিনিট • ${route.fare} টাকা`,
+    pa: `${route.distance} ਸਟੇਸ਼ਨ • ${route.estimatedMinutes} ਮਿੰਟ • ${route.fare} ਰੁਪਏ`,
   };
 
   return stats[language];

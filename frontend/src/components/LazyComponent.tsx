@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import { Suspense, type ReactNode } from 'react';
 
 export function LazyBoundary({
