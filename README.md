@@ -12,7 +12,7 @@ Interactive Ahmedabad Metro route planning with station search, fare and time es
 
 [Open the web app](https://ahmedabad-metro-fare-calculator.vercel.app/)
 
-![Ahmedabad Metro Route Planner showcase](public/images/showcase.png)
+![Ahmedabad Metro Route Planner showcase](frontend/public/images/showcase.png)
 
 ## Features
 
