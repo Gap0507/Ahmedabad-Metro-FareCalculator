@@ -107,7 +107,7 @@ function RouteSharePanel({ route, fromName, toName }: RouteSharePanelProps) {
                         <p className="mt-0.5 text-xs font-medium text-neutral-500 dark:text-zinc-400">{t('timeLimit', { count: route.timeLimitMinutes })}</p>
                     </div>
                 </div>
-                <p className="text-xs font-medium text-neutral-500 dark:text-zinc-400">metro.coolhead.in</p>
+                <p className="text-xs font-medium text-neutral-500 dark:text-zinc-400"></p>
             </div>
 
             <div className="flex flex-wrap items-center gap-2">

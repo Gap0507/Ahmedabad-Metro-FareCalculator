@@ -4,7 +4,7 @@ import type { ReactNode } from 'react';
 
 type LegalPageKind = 'privacy' | 'terms';
 
-const supportEmail = 'pratik@coolhead.in';
+const supportEmail = 'shahgarv0507@gmail.com';
 
 function BackToPlannerLink() {
     return (

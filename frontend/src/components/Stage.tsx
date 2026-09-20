@@ -60,7 +60,7 @@ function useDeferredInteractiveLoad() {
             if (typeof window.requestIdleCallback === 'function') {
                 idleId = window.requestIdleCallback(markReady, { timeout: 1200 });
             } else {
-                timeoutId = globalThis.setTimeout(markReady, 350);
+                timeoutId = window.setTimeout(markReady, 350);
             }
         });
 
@@ -425,8 +425,8 @@ function MetroMapStage() {
     );
 
     return (
-        <div className="min-h-svh overflow-hidden bg-[#f4f0e8] p-2 text-neutral-950 dark:bg-zinc-950 dark:text-zinc-50 sm:p-4 lg:overflow-visible lg:p-6">
-            <div className="grid min-h-[calc(100svh-1.5rem)] gap-4 sm:min-h-[calc(100svh-2rem)] lg:min-h-[calc(100svh-3rem)] lg:grid-cols-2">
+        <div className="min-h-svh overflow-hidden bg-[#f4f0e8] p-2 text-neutral-950 dark:bg-zinc-950 dark:text-zinc-50 sm:p-4 lg:overflow-visible lg:p-2">
+            <div className="grid min-h-[calc(100svh-1.5rem)] gap-4 sm:min-h-[calc(100svh-2rem)] lg:min-h-[calc(100svh-1rem)] lg:grid-cols-2">
                 <main className="relative min-h-[calc(100svh-1.5rem)] h-screen overflow-hidden rounded-lg border border-neutral-200 bg-[#f4f0e8] shadow-sm dark:border-zinc-800 dark:bg-zinc-950 sm:min-h-[calc(100svh-2rem)] lg:min-h-0">
                     {canLoadInteractiveMap ? (
                         <LazyBoundary fallback={<MapFallback />}>
@@ -490,7 +490,7 @@ function MetroMapStage() {
                         </Drawer.Portal>
                     </Drawer.Root>
                 ) : (
-                    <aside className="min-h-0 flex-col gap-5 overflow-y-auto rounded-lg border border-neutral-200 bg-white p-4 shadow-sm dark:border-zinc-700 dark:bg-zinc-900 sm:p-5 lg:flex lg:max-h-[calc(100vh-3rem)]">
+                    <aside className="min-h-0 flex-col gap-5 overflow-y-auto rounded-lg border border-neutral-200 bg-white p-4 shadow-sm dark:border-zinc-700 dark:bg-zinc-900 sm:p-5 lg:flex lg:max-h-[calc(100vh-1rem)] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                         <div>
                             <h1 className="mt-2 text-sm font-semibold uppercase text-red-700">{t('ahmedabadMetro')}</h1>
                         </div>
