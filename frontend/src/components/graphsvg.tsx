@@ -1441,7 +1441,7 @@ function SvgComponent({
     context.fillRect(SHORTS_WIDTH - 390, SHORTS_HEIGHT - 96, 326, 48);
     context.fillStyle = '#111827';
     context.font = `800 28px ${EXPORT_FONT_STACK}`;
-    context.fillText('', SHORTS_WIDTH - 366, SHORTS_HEIGHT - 64);
+    context.fillText('ahmedabad-metro-fare-calculator.vercel.app', SHORTS_WIDTH - 650, SHORTS_HEIGHT - 64);
     drawShortsJourneyTimeline(context, route, routeStops, progress);
   }, [drawSvgToCanvas]);
 

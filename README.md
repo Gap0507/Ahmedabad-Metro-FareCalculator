@@ -3,16 +3,14 @@
 [![GitHub repo](https://img.shields.io/badge/GitHub-Ahmedabad_Metro-181717?logo=github)](https://github.com/Gap0507/Ahmedabad-Metro-FareCalculator)
 [![Last commit](https://img.shields.io/github/last-commit/Gap0507/Ahmedabad-Metro-FareCalculator?logo=github)](https://github.com/Gap0507/Ahmedabad-Metro-FareCalculator/commits/main)
 [![Issues](https://img.shields.io/github/issues/Gap0507/Ahmedabad-Metro-FareCalculator?logo=github)](https://github.com/Gap0507/Ahmedabad-Metro-FareCalculator/issues)
-[![React](https://img.shields.io/badge/React-19-61dafb?logo=react&logoColor=111)](https://react.dev/)
+[![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js&logoColor=white)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178c6?logo=typescript&logoColor=fff)](https://www.typescriptlang.org/)
-[![Vite](https://img.shields.io/badge/Vite-7.2-646cff?logo=vite&logoColor=fff)](https://vite.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.1-38bdf8?logo=tailwindcss&logoColor=fff)](https://tailwindcss.com/)
-[![Android app](https://img.shields.io/badge/Android-Get_it_on_Google_Play-3ddc84?logo=googleplay&logoColor=fff)](https://play.google.com/store/apps/details?id=in.coolhead.metroroute&hl=en_IN)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](#license)
 
 Interactive Ahmedabad Metro route planning with station search, fare and time estimates, animated map playback, journey timelines, and PNG/MP4 exports.
 
-[Open the web app](https:///) | [Download for Android](https://play.google.com/store/apps/details?id=in.coolhead.metroroute&hl=en_IN)
+[Open the web app](https://ahmedabad-metro-fare-calculator.vercel.app/)
 
 ![Ahmedabad Metro Route Planner showcase](public/images/showcase.png)
 
@@ -114,41 +112,10 @@ flowchart LR
 
 Video export reuses the same route math. Instead of depending on live GSAP playback, export code calculates the expected progress for each frame, renders the SVG into a canvas, and writes the frames with Mediabunny.
 
-## Android App
-
-The Android app is published on Google Play as a Trusted Web Activity (TWA):
-
-- Package ID: `in.coolhead.metroroute`
-- Play Store: <https://play.google.com/store/apps/details?id=in.coolhead.metroroute&hl=en_IN>
-- Production host: ``
-- Start URL: `/`
-
-## Android Packaging with Bubblewrap
-
-This repository includes the Bubblewrap-generated Android wrapper for the web app. Bubblewrap reads `twa-manifest.json` and creates the native Android project that launches `https:///` as a Trusted Web Activity.
-
-The important files are:
-
-- `twa-manifest.json`: TWA configuration, package ID, host, icons, theme colors, version codes, and signing key metadata.
-- `app/`: generated Android app module.
-- `build.gradle`, `settings.gradle`, `gradle/`, `gradlew`: Android build files generated/used by Bubblewrap and Gradle.
-- `app-release-bundle.aab` and signed APK artifacts: release outputs generated from the Android project.
-
-Typical Bubblewrap flow:
-
-```bash
-npx @bubblewrap/cli init --manifest https:///manifest.json
-npx @bubblewrap/cli update
-npx @bubblewrap/cli build
-```
-
-Use `npx @bubblewrap/cli update` after changing the web manifest, app metadata, icons, theme colors, Android version codes, or other TWA settings. Build and publish the generated `.aab` through the Google Play Console.
-
 ## Tech Stack
 
-- React 19
+- Next.js 15
 - TypeScript
-- Vite
 - Tailwind CSS
 - GSAP
 - Zustand
@@ -194,7 +161,7 @@ Contributions are welcome. Please keep changes focused and easy to review.
 5. Run `pnpm run lint` and `pnpm run build` before opening a pull request.
 6. Include a clear PR description with the problem, solution, screenshots or screen recordings for UI changes, and any known limitations.
 
-For data updates, prefer the existing scripts in `scripts/` over manual edits when possible. For Android changes, update `twa-manifest.json` first, then regenerate the Bubblewrap project so the native wrapper stays aligned with the deployed web app.
+For data updates, prefer the existing scripts in `scripts/` over manual edits when possible.
 
 ## License
 
